@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="script.js"></script>
+    <title>main</title>
+</head>
+<body>
+<div class="mask hidden">
+    <div class="window">
+       <h2>
+          Результат
+       </h2>
+        <hr />
+        <div class="main-part">
+
+        </div>
+        <hr />
+        <div  class="close">
+            <button class="hide">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<main>
+<header>
+    <h2>Александр Леонтьев</h2>
+    <nav>
+        <div class="nav-link">
+            <a href="#name">Обо мне</a>
+            <a href="#activity">Моя деятельность</a>
+            <a href="#calculator">Калькулятор</a>
+            <a href="#difficulties">Сложность</a>
+            <a href="#mood">Настроение</a>
+            <a href="#footer">Контакты</a>
+        </div>
+    </nav>
+</header>
+    <section id="name">
+        <div class="my_name ">
+            <h1>Меня зовут Александр!</h1>
+            <h2>И я хочу обучиться программированию, потому что мне это жутко интересно!</h2>
+            <h2>А еще я люблю музыку и погонять на электросамокате.</h2>
+        </div>
+        <div class="rabbit">
+            <img src="rabbite.jpg">
+        </div>
+    </section>
+    <section id="activity">
+        <h2>Моя деятельность</h2>
+        <div class="numbers">
+            <div class="box-one">
+                <div class="number-one"> 1</div>
+                <div class="one-content-box">Работаю в сфере малоэтажного строительства</div>
+            </div>
+            <div class="box-two">
+                <div class="number-one">2</div>
+                <div class="one-content-box">
+                    Учу английский
+                </div>
+            </div>
+            <div class="box-three">
+                <div class="number-one">3</div>
+                <div class="one-content-box">
+                    Провожу курс по разработке программного обеспечения
+                </div>
+            </div>
+            <div class="box-two">
+                <div class="number-one">4</div>
+                <div class="one-content-box">
+                    Провожу курс по самообразованию
+                </div>
+            </div>
+            <div class="box-three">
+                <div class="number-one">
+                    5
+                </div>
+                <div class="one-content-box">
+                Смотрю часто в небо
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="calculator">
+        <div class="calculator-box">
+            <div>
+                <h2 class="calculator-content">Калькулятор</h2>
+            </div>
+            <div>
+                <p>
+                    Введите число:
+                </p>
+                <input class="input-one" type="text"  oninput="changeHandler(this)" placeholder="0"/>
+            </div>
+            <div>
+                <p>
+                    Выберите операцию:
+                </p>
+               <div class="input-select">
+                  <select class="select">
+                   <option></option>
+                   <option>+</option>
+                   <option>-</option>
+                   <option>*</option>
+                   <option>/</option>
+               </select>
+               </div>
+            </div>
+            <div>
+                <p>
+                    Введите число:
+                </p>
+                <input class="input-two" type="text" onkeyup="changeHandler(this)" placeholder="0"/>
+            </div>
+            <div>
+                <button class="button" >
+                    Вычислить
+                </button>
+            </div>
+        </div>
+        <div class="check">
+            <p>Ваш результат:</p>
+            <p>Расчет не производился</p>
+        </div>
+    </section>
+    <section id="difficulties">
+        <h2 class="tricky">Сложности</h2>
+        <div class="numbers">
+            <div class="box-one">
+                <p class="question">?</p>
+                <div class="one-content-box">Не получалось подключить картинку</div>
+            </div>
+            <div class="box-two">
+                <p class="question">?</p>
+                <div class="one-content-box">
+                    Не получалось сделать переход по ссылк
+                </div>
+            </div>
+            <div class="box-three">
+                <p class="question">?</p>
+                <div class="one-content-box">Не работают цвета</div>
+            </div>
+            <div class="box-two">
+                <p class="question">?</p>
+                <div class="one-content-box">
+                    Нет границ
+                </div>
+            </div>
+            <div class="box-three">
+                <p class="question">?</p>
+                <div class="one-content-box">Не получалось сделать переход по ссылке</div>
+            </div>
+        </div>
+    </section>
+    <aside>
+        <h2 id="mood">
+            Настроение
+        </h2>
+        <div class="smail">
+            <img src="image%201.png">
+        </div>
+    </aside>
+    <footer id="footer">
+        <div class="name-footer">
+            <h2>Александр Леонтьев</h2>
+        </div>
+        <div class="phone-vk">
+            <div class="phone">03</div>
+            <a href="#"><img src="Vector.png"></a>
+        </div>
+    </footer>
+</main>
+</body>
+</html>
